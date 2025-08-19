@@ -127,6 +127,16 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.bodyy{
+    font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-color: #1e1e1e;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body .page-content {
   margin-top: 110px;
   background-color: #27292a;

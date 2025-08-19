@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.7",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.7.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.8.1",

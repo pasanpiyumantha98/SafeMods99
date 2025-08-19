@@ -2,13 +2,13 @@ import "../css/fontawesome.css"
 import "../css/templatemo-cyborg-gaming.css"
 import "../css/owl.css"
 import "../css/animate.css"
-import 'swiper/css';
-import "../js/custom.js"
-import "../js/isotope.js"
-import "../js/isotope.min.js"
-import "../js/owl-carousel.js"
-import "../js/popup.js"
-import "../js/tabs.js"
+import 'swiper/css'
+//import "../js/custom.js"
+//import "../js/isotope.js"
+import logo from "../images/logo.png"
+
+
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -20,19 +20,23 @@ function Home ()
 {
 
  return (
-    <>
-      {/* ***** Preloader Start ***** */}
-      <div id="js-preloader" className="js-preloader">
-        <div className="preloader-inner">
-          <span className="dot"></span>
-          <div className="dots">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </div>
-      {/* ***** Preloader End ***** */}
+    <div className="bodyy">
+        <script src="../js/popup.js"></script>
+        <script src="../js/tabs.js"></script>
+        <script src="../js/isotope.min.js"></script>
+        <script src="../js/owl-carousel.js"></script>
+        <script src="../js/custom.js"></script>
+        <script src="../js/isotope.js"></script>
+        <script src="../vendor/jquery/jquery.min.js"></script>
+        <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+
+   
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></link>
+
+
+
+     
 
       {/* ***** Header Area Start ***** */}
       <header className="header-area header-sticky">
@@ -42,7 +46,7 @@ function Home ()
               <nav className="main-nav">
                 {/* ***** Logo Start ***** */}
                 <a href="index.html" className="logo">
-                  <img src="assets/images/logo.png" alt="" />
+                  <img src={logo} alt="" />
                 </a>
                 {/* ***** Logo End ***** */}
                 {/* ***** Search End ***** */}
@@ -68,7 +72,7 @@ function Home ()
                   <li><a href="streams.html">Streams</a></li>
                   <li>
                     <a href="profile.html">
-                      Profile <img src="assets/images/profile-header.jpg" alt="" />
+                      Profile <img src="../images/profile-header.jpg" alt="" />
                     </a>
                   </li>
                 </ul>
@@ -345,7 +349,7 @@ function Home ()
           </div>
         </div>
       </footer>
-    </>
+    </div>
   );
 
 
