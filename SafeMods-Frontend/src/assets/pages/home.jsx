@@ -2,7 +2,7 @@ import "../css/fontawesome.css"
 import "../css/templatemo-cyborg-gaming.css"
 import "../css/owl.css"
 import "../css/animate.css"
-import "https://unpkg.com/swiper@7/swiper-bundle.min.css"
+import 'swiper/css';
 import "../js/custom.js"
 import "../js/isotope.js"
 import "../js/isotope.min.js"
