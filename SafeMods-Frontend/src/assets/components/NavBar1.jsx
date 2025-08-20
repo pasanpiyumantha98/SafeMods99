@@ -1,0 +1,90 @@
+import "../css/fontawesome.css"
+import "../css/templatemo-cyborg-gaming.css"
+import "../css/owl.css"
+import "../css/animate.css"
+import 'swiper/css'
+//import "../js/custom.js"
+//import "../js/isotope.js"
+import logo from "../images/logo.png"
+
+
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+function NavBar1()
+{
+
+return(
+    <div className="bodyy">
+
+     <script src="../js/popup.js"></script>
+        <script src="../js/tabs.js"></script>
+        <script src="../js/isotope.min.js"></script>
+        <script src="../js/owl-carousel.js"></script>
+        <script src="../js/custom.js"></script>
+        <script src="../js/isotope.js"></script>
+        <script src="../vendor/jquery/jquery.min.js"></script>
+        <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+
+   
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></link>
+
+
+{/* ***** Header Area Start ***** */}
+      <header className="header-area header-sticky">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <nav className="main-nav">
+                {/* ***** Logo Start ***** */}
+                <a href="index.html" className="logo">
+                  <img src={logo} alt="" />
+                </a>
+                {/* ***** Logo End ***** */}
+                {/* ***** Search End ***** */}
+                <div className="search-input">
+                  <form id="search" action="#">
+                    <input
+                      type="text"
+                      placeholder="Type Something"
+                      id="searchText"
+                      name="searchKeyword"
+                    />
+                    <i className="fa fa-search"></i>
+                  </form>
+                </div>
+                {/* ***** Search End ***** */}
+                {/* ***** Menu Start ***** */}
+                <ul className="nav">
+                  <li>
+                    <a href="index.html" className="active">Home</a>
+                  </li>
+                  <li><a href="browse.html">Games</a></li>
+                  <li><a href="details.html">Mods</a></li>
+                  <li><a href="streams.html">Contact</a></li>
+                  <li>
+                    <a href="profile.html">
+                      Report <img src="../images/profile-header.jpg" alt="" />
+                    </a>
+                  </li>
+                </ul>
+                <a className="menu-trigger">
+                  <span>Menu</span>
+                </a>
+                {/* ***** Menu End ***** */}
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      {/* ***** Header Area End ***** */}
+
+      </div>
+
+)
+
+
+}
+
+export default NavBar1;
