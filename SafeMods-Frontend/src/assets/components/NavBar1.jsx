@@ -47,7 +47,7 @@ return(
                   <form id="search" action="#">
                     <input
                       type="text"
-                      placeholder="Type Something"
+                      placeholder="Search Mods"
                       id="searchText"
                       name="searchKeyword"
                     />

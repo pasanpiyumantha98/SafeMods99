@@ -52,9 +52,9 @@ function Home ()
                 <div className="row">
                   <div className="col-lg-7">
                     <div className="header-text">
-                      <h6>Welcome To Cyborg</h6>
-                      <h4>
-                        <em>Browse</em> Our Popular Games Here
+                      <h6>Welcome To Safe Mods 99</h6>
+                      <h4 style={{color:"white"}}>
+                        <em>Safest</em> Way to to get mods
                       </h4>
                       <div className="main-button">
                         <a href="browse.html">Browse Now</a>
@@ -71,7 +71,7 @@ function Home ()
                   <div className="col-lg-12">
                     <div className="heading-section">
                       <h4>
-                        <em>Most Popular</em> Right Now
+                        <em>Search Mods</em> By Game
                       </h4>
                     </div>
                     <div className="row">
@@ -182,7 +182,7 @@ function Home ()
 
                       <div className="col-lg-12">
                         <div className="main-button">
-                          <a href="browse.html">Discover Popular</a>
+                          <a href="browse.html">More Games</a>
                         </div>
                       </div>
                     </div>
@@ -196,7 +196,7 @@ function Home ()
                 <div className="col-lg-12">
                   <div className="heading-section">
                     <h4>
-                      <em>Your Gaming</em> Library
+                      <em>Trending</em> Mods
                     </h4>
                   </div>
                   <div className="item">
@@ -274,7 +274,7 @@ function Home ()
                 </div>
                 <div className="col-lg-12">
                   <div className="main-button">
-                    <a href="profile.html">View Your Library</a>
+                    <a href="profile.html">More Mods</a>
                   </div>
                 </div>
               </div>
@@ -289,17 +289,8 @@ function Home ()
           <div className="row">
             <div className="col-lg-12">
               <p>
-                Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved.
-                <br />
-                Design:{" "}
-                <a
-                  href="https://templatemo.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  title="free CSS templates"
-                >
-                  TemplateMo
-                </a>
+                Copyright © 2025 <a href="">Safe Mods 99</a>. All rights reserved.
+               
               </p>
             </div>
           </div>
