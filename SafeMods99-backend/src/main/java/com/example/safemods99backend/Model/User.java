@@ -10,11 +10,11 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Document
+@Document(collection = "Users")
 public class User {
 
     @Id
-    int id;
+    Integer id;
 
     String fname;
     String lname;
