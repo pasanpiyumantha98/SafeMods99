@@ -17,9 +17,9 @@ public class Report {
     Integer id;
 
     String fname;
-    String Email;
-    String ModName;
-    String BaseGame;
-    String ModVersion;
-    String Issue;
+    String mail;
+    String modName;
+    String baseGame;
+    String modVersion;
+    String issue;
 }
