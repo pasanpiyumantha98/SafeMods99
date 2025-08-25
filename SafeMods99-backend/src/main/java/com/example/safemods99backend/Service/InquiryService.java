@@ -1,5 +1,7 @@
 package com.example.safemods99backend.Service;
 
+import com.example.safemods99backend.Model.Inquiry;
+import com.example.safemods99backend.Dto.InquiryDto;
 import com.example.safemods99backend.Repo.InquiryRepo;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,14 +13,21 @@ import org.springframework.transaction.annotation.Transactional;
 public class InquiryService {
 
     @Autowired
-    InquiryRepo repo;
+    InquiryRepo inquiryRepo;
 
     @Autowired
-    ModelMapper mapper;
+    ModelMapper modelMapper;
 
     public String Hello()
     {
         return "Hello";
+    }
+
+
+    public String InqSubmit(InquiryDto inquiryDto)
+    {
+        inquiryRepo.save(modelMapper.map(inquiryDto,Inquiry.class));
+        return "submitted";
     }
 
 
