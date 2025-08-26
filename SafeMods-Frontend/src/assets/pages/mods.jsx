@@ -18,7 +18,7 @@ import { useEffect, useState } from "react"
 
 
 
-function Games ()
+function Mods ()
 {
 
 
@@ -63,7 +63,7 @@ function Games ()
 
                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                    <div className="heading-section">
-                   <h4><em>Search Mods</em> By Game </h4>
+                   <h4>Search Mods </h4>
                    </div>
                   
                   {/* ***** Filter Dropdown Start ***** */}
@@ -79,7 +79,7 @@ function Games ()
                     </button>
                     <ul className="dropdown-menu">
                       <li><button className="dropdown-item" type="button" value="Recently Added" onClick={e => setFilter(e.target.value)}>Recently Added</button></li>
-                      <li><button className="dropdown-item" type="button" value="Most Mods" onClick={e => setFilter(e.target.value)}>Most Mods</button></li>
+                      <li><button className="dropdown-item" type="button" value="Most Downloads" onClick={e => setFilter(e.target.value)}>Most Downloads</button></li>
                       <li><button className="dropdown-item" type="button" value="Editor's Choice" onClick={e =>setFilter(e.target.value)}>Editor's Choice</button></li>
                     </ul>
                   </div>
@@ -233,4 +233,4 @@ function Games ()
 
 
 } 
-export default Games
+export default Mods

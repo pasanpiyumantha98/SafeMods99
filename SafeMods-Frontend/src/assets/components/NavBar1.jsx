@@ -6,6 +6,7 @@ import 'swiper/css'
 //import "../js/custom.js"
 //import "../js/isotope.js"
 import logo from "../images/logo.png"
+import { Route,Link } from "react-router-dom"
 
 
 
@@ -57,16 +58,15 @@ return(
                 {/* ***** Search End ***** */}
                 {/* ***** Menu Start ***** */}
                 <ul className="nav">
+                  <li><Link   className="active" to="/">Home</Link></li>
+                  <li><Link   className="active" to="/games">Games</Link></li>
+                  <li><Link  className="active" to="/mods">Mods</Link></li>
+                  <li><Link  className="active" to="/contact">Support</Link></li>
+                  
                   <li>
-                    <a href="index.html" className="active">Home</a>
-                  </li>
-                  <li><a href="browse.html">Games</a></li>
-                  <li><a href="details.html">Mods</a></li>
-                  <li><a href="streams.html">Contact</a></li>
-                  <li>
-                    <a href="profile.html">
+                   <Link className="active" to="/report">
                       Report <img src="../images/profile-header.jpg" alt="" />
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 <a className="menu-trigger">
