@@ -76,9 +76,9 @@ function Games ()
                       {filter}
                     </button>
                     <ul className="dropdown-menu">
-                      <li><button className="dropdown-item" type="button" onChange={e> }>Recently Added</button></li>
-                      <li><button className="dropdown-item" type="button">Most Mods</button></li>
-                      <li><button className="dropdown-item" type="button">Editor's Choice</button></li>
+                      <li><button className="dropdown-item" type="button" value="Recently Added" onChange={e => setFilter(e.target.value)}>Recently Added</button></li>
+                      <li><button className="dropdown-item" type="button" value="Most Mods" onChange={e => setFilter(e.target.value)}>Most Mods</button></li>
+                      <li><button className="dropdown-item" type="button" value="Editor's Choice" onChange={e =>setFilter(e.target.value)}>Editor's Choice</button></li>
                     </ul>
                   </div>
                   {/* ***** Filter Dropdown End ***** */}
