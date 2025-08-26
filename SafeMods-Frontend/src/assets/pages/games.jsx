@@ -7,18 +7,23 @@ import 'swiper/css'
 //import "../js/isotope.js"
 import logo from "../images/logo.png"
 import NavBar1 from "../components/NavBar1"
-
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useState } from "react"
 
 
 
 
 
 
-function Home ()
+function Games ()
 {
+
+
+  const [filter,setFilter] = useState("Recently Added");
+
 
  return (
     <div className="bodyy">
@@ -47,34 +52,40 @@ function Home ()
         <div className="row">
           <div className="col-lg-12">
             <div className="page-content">
-              {/* ***** Banner Start ***** */}
-              <div className="main-banner">
-                <div className="row">
-                  <div className="col-lg-7">
-                    <div className="header-text">
-                      <h6>Welcome To Safe Mods 99</h6>
-                      <h4 style={{color:"white"}}>
-                        <em>Safest</em> Way to to get mods
-                      </h4>
-                      <div className="main-button">
-                        <a href="browse.html"></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* ***** Banner End ***** */}
+             
 
               {/* ***** Most Popular Start ***** */}
               <div className="most-popular">
                 <div className="row">
                   <div className="col-lg-12">
-                    <div className="heading-section">
-                      <h4>
-                        <em>Search Mods</em> By Game
-                      </h4>
-                    </div>
-                    <div className="row">
+
+                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                   <div className="heading-section">
+                   <h4><em>Search Mods</em> By Game </h4>
+                   </div>
+                  
+                  {/* ***** Filter Dropdown Start ***** */}
+                  <div className="dropdown" >
+                    <button
+                      className="btn btn-danger dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      style={{background:"black"}}
+                    >
+                      {filter}
+                    </button>
+                    <ul className="dropdown-menu">
+                      <li><button className="dropdown-item" type="button" onChange={e> }>Recently Added</button></li>
+                      <li><button className="dropdown-item" type="button">Most Mods</button></li>
+                      <li><button className="dropdown-item" type="button">Editor's Choice</button></li>
+                    </ul>
+                  </div>
+                  {/* ***** Filter Dropdown End ***** */}
+
+                   </div>
+
+                   <div className="row">
                       <div className="col-lg-3 col-sm-6">
                         <div className="item">
                           <img src="assets/images/popular-01.jpg" alt="" />
@@ -180,9 +191,11 @@ function Home ()
                         </div>
                       </div>
 
+                      
+
                       <div className="col-lg-12">
                         <div className="main-button">
-                          <a href="browse.html">More Games</a>
+                          <a href="browse.html">Next ></a>
                         </div>
                       </div>
                     </div>
@@ -191,94 +204,9 @@ function Home ()
               </div>
               {/* ***** Most Popular End ***** */}
 
-              {/* ***** Gaming Library Start ***** */}
-              <div className="gaming-library">
-                <div className="col-lg-12">
-                  <div className="heading-section">
-                    <h4>
-                      <em>Trending</em> Mods
-                    </h4>
-                  </div>
-                  <div className="item">
-                    <ul>
-                      <li>
-                        <img src="assets/images/game-01.jpg" alt="" className="templatemo-item" />
-                      </li>
-                      <li>
-                        <h4>Dota 2</h4><span>Sandbox</span>
-                      </li>
-                      <li>
-                        <h4>Date Added</h4><span>24/08/2036</span>
-                      </li>
-                      <li>
-                        <h4>Hours Played</h4><span>634 H 22 Mins</span>
-                      </li>
-                      <li>
-                        <h4>Currently</h4><span>Downloaded</span>
-                      </li>
-                      <li>
-                        <div className="main-border-button border-no-active">
-                          <a href="#">Donwloaded</a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="item">
-                    <ul>
-                      <li>
-                        <img src="assets/images/game-02.jpg" alt="" className="templatemo-item" />
-                      </li>
-                      <li>
-                        <h4>Fortnite</h4><span>Sandbox</span>
-                      </li>
-                      <li>
-                        <h4>Date Added</h4><span>22/06/2036</span>
-                      </li>
-                      <li>
-                        <h4>Hours Played</h4><span>740 H 52 Mins</span>
-                      </li>
-                      <li>
-                        <h4>Currently</h4><span>Downloaded</span>
-                      </li>
-                      <li>
-                        <div className="main-border-button">
-                          <a href="#">Donwload</a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="item last-item">
-                    <ul>
-                      <li>
-                        <img src="assets/images/game-03.jpg" alt="" className="templatemo-item" />
-                      </li>
-                      <li>
-                        <h4>CS-GO</h4><span>Sandbox</span>
-                      </li>
-                      <li>
-                        <h4>Date Added</h4><span>21/04/2036</span>
-                      </li>
-                      <li>
-                        <h4>Hours Played</h4><span>892 H 14 Mins</span>
-                      </li>
-                      <li>
-                        <h4>Currently</h4><span>Downloaded</span>
-                      </li>
-                      <li>
-                        <div className="main-border-button border-no-active">
-                          <a href="#">Donwloaded</a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="col-lg-12">
-                  <div className="main-button">
-                    <a href="profile.html">More Mods</a>
-                  </div>
-                </div>
-              </div>
-              {/* ***** Gaming Library End ***** */}
+              
+            
+                      
             </div>
           </div>
         </div>
@@ -303,4 +231,4 @@ function Home ()
 
 
 } 
-export default Home
+export default Games
