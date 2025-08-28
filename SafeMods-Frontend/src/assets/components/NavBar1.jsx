@@ -61,7 +61,7 @@ return(
                   <li><Link   className="active" to="/">Home</Link></li>
                   <li><Link   className="active" to="/games">Games</Link></li>
                   <li><Link  className="active" to="/mods">Mods</Link></li>
-                  <li><Link  className="active" to="/contact">Support</Link></li>
+                  <li><Link  className="active" to="/support">Support</Link></li>
                   
                   <li>
                    <Link className="active" to="/report">
