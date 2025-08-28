@@ -29,8 +29,10 @@ const [bgame,setBgame] = useState("");
 const [mod,setMod] = useState("");
 const [issue,setIssue] = useState("");
 
-async function submitReport()
+
+async function submitReport(e)
 {
+  e.preventDefault();
 
   const response = await axios.post("http://localhost:8080/api/reports/submit",{fname:fname, mail:email, modName:mod, baseGame:bgame, issue:issue})
 
