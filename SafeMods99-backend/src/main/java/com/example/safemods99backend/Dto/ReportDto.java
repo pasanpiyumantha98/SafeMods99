@@ -15,7 +15,6 @@ public class ReportDto {
     String mail;
     String modName;
     String baseGame;
-    String modVersion;
     String issue;
 
 }

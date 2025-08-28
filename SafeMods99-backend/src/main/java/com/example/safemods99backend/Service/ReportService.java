@@ -25,6 +25,9 @@ public class ReportService {
 
     public String RepoSubmit(ReportDto reportDto)
     {
+
+        Report report = reportRepo.findTopByOrderByIdDesc();
+        reportDto.setId(report.getId()+1);
         reportRepo.save(modelMapper.map(reportDto, Report.class));
         return "ReportSubmit";
 
