@@ -138,7 +138,7 @@ body {
 }
 
 body .page-content {
-  margin-top: 110px;
+  margin-top: 30px;
   background-color: #27292a;
   padding: 60px;
   border-radius: 23px;
@@ -817,6 +817,13 @@ Most Popular Style
 
 .most-popular {
   margin-top: 60px;
+  padding: 30px;
+  background-color: #1f2122;
+  border-radius: 23px;
+}
+
+.mainb {
+  margin-top: 10px;
   padding: 30px;
   background-color: #1f2122;
   border-radius: 23px;
