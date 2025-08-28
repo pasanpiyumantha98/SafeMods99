@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import SupportPublic from './assets/pages/support'
 import Games from './assets/pages/games'
 import Mods from './assets/pages/mods'
+import Report from './assets/pages/report'
 
 
 createRoot(document.getElementById('root')).render(
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')).render(
   <Route path="/support" element={<SupportPublic/>}/>
   <Route path="/games" element={<Games/>}/>
   <Route path="/mods" element={<Mods/>}/>
+    <Route path="/report" element={<Report/>}/>
 
 
   </Routes>
