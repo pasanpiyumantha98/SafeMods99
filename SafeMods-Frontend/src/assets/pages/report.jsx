@@ -8,6 +8,7 @@ import 'swiper/css'
 import logo from "../images/logo.png"
 import NavBar1 from "../components/NavBar1"
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { toast } from "react-toastify";
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -38,11 +39,17 @@ async function submitReport(e)
 
   if(response.data === "ReportSubmit")
   {
-    alert("OK")
+    toast.success("Successfully Reported!")
+
+    setBgame("")
+    setEmail("")
+    setFname("")
+    setIssue("")
+    setMod("")
 
   } else 
   {
-    alert("NotOK")
+    toast.error("Something went wrong!");
   }
 
 }

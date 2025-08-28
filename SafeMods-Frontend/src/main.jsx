@@ -6,10 +6,23 @@ import SupportPublic from './assets/pages/support'
 import Games from './assets/pages/games'
 import Mods from './assets/pages/mods'
 import Report from './assets/pages/report'
+import { ToastContainer } from 'react-toastify'
 
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
+   <ToastContainer 
+        position="top-right" 
+        autoClose={3000} 
+        hideProgressBar={false} 
+        newestOnTop={false} 
+        closeOnClick 
+        rtl={false} 
+        pauseOnFocusLoss 
+        draggable 
+        pauseOnHover 
+        theme="colored"
+      />
   <Routes>
 
   <Route path="/" element={<Home/>}/>

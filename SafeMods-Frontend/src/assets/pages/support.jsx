@@ -8,7 +8,7 @@ import 'swiper/css'
 import logo from "../images/logo.png"
 import NavBar1 from "../components/NavBar1"
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
+import { toast } from "react-toastify";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState } from "react"
@@ -21,8 +21,38 @@ import { useEffect, useState } from "react"
 function SupportPublic ()
 {
 
+    const [fname,setFname] = useState("");
+    const [lname,setLname] = useState("");
+    const [email,setEmail] = useState("");
+    const [issue,setIssue] = useState("");
+   
 
-  const [filter,setFilter] = useState("Recently Added");
+  
+
+  async function submitSupport(e)
+  {
+    e.preventDefault();
+
+  const response = await axios.post("http://localhost:8080/api/inquiry/submit",{fname:fname, email:email, lname:lname, issue:issue})
+
+  if(response.data === "submitted")
+  {
+    toast.success("Successfully Reported!")
+
+    setFname("")
+    setEmail("")
+    setFname("")
+    setIssue("")
+    setLname("")
+
+  } else 
+  {
+    toast.error("Something went wrong!");
+  }
+
+
+
+  }
 
  
 
@@ -87,6 +117,8 @@ function SupportPublic ()
                               className="form-control"
                               id="name"
                               placeholder="Enter your name"
+                              value={fname}
+                              onChange={e => setFname(e.target.value)}
                             />
                           </div>
                           <div className="mb-3">
@@ -98,6 +130,8 @@ function SupportPublic ()
                               className="form-control"
                               id="name"
                               placeholder="Enter your name"
+                              value={lname}
+                              onChange={e => setLname(e.target.value)}
                             />
                           </div>
 
@@ -110,6 +144,8 @@ function SupportPublic ()
                               className="form-control"
                               id="email"
                               placeholder="name@example.com"
+                              value={email}
+                              onChange={e => setEmail(e.target.value)}
                             />
                           </div>
                           
@@ -123,11 +159,13 @@ function SupportPublic ()
                               id="issue"
                               rows="4"
                               placeholder="Describe your issue..."
+                              value={issue}
+                              onChange={e => setIssue(e.target.value)}
                             ></textarea>
                           </div>
 
                           <div className="d-grid">
-                            <button type="submit" className="btn btn-danger" style={{backgroundColor:"#ec6090"}}>
+                            <button type="submit" className="btn btn-danger" style={{backgroundColor:"#ec6090"}} onClick={submitSupport}>
                               Submit Request
                             </button>
                           </div>

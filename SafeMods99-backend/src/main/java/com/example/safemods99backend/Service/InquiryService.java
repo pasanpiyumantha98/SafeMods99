@@ -26,6 +26,9 @@ public class InquiryService {
 
     public String InqSubmit(InquiryDto inquiryDto)
     {
+
+        Inquiry maxInquiry = inquiryRepo.findTopByOrderByIdDesc();
+        inquiryDto.setId(maxInquiry.getId()+1);
         inquiryRepo.save(modelMapper.map(inquiryDto,Inquiry.class));
         return "submitted";
     }
