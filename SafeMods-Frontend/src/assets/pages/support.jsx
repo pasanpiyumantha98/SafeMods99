@@ -9,7 +9,7 @@ import logo from "../images/logo.png"
 import NavBar1 from "../components/NavBar1"
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { toast } from "react-toastify";
-
+import axios from "axios"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState } from "react"
 
@@ -33,7 +33,7 @@ function SupportPublic ()
   {
     e.preventDefault();
 
-  const response = await axios.post("http://localhost:8080/api/inquiry/submit",{fname:fname, email:email, lname:lname, issue:issue})
+  const response = await axios.post("http://localhost:8080/api/inquiry/submit",{fname:fname, email:email, lname:lname, msg:issue})
 
   if(response.data === "submitted")
   {
