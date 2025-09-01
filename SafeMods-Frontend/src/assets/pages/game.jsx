@@ -20,39 +20,11 @@ import axios from "axios"
 
 
 
-function Mod ()
+function Game ()
 {
 
 
-const [fname,setFname] = useState("");
-const [email,setEmail] = useState("");
-const [bgame,setBgame] = useState("");
-const [mod,setMod] = useState("");
-const [issue,setIssue] = useState("");
 
-
-async function submitReport(e)
-{
-  e.preventDefault();
-
-  const response = await axios.post("http://localhost:8080/api/reports/submit",{fname:fname, mail:email, modName:mod, baseGame:bgame, issue:issue})
-
-  if(response.data === "ReportSubmit")
-  {
-    toast.success("Successfully Reported!")
-
-    setBgame("")
-    setEmail("")
-    setFname("")
-    setIssue("")
-    setMod("")
-
-  } else 
-  {
-    toast.error("Something went wrong!");
-  }
-
-}
  
 
  
@@ -263,4 +235,4 @@ async function submitReport(e)
 )
 
 } 
-export default Mod
+export default Game

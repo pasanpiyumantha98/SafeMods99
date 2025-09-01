@@ -7,7 +7,7 @@ import Games from './assets/pages/games'
 import Mods from './assets/pages/mods'
 import Report from './assets/pages/report'
 import { ToastContainer } from 'react-toastify'
-import Mod from './assets/pages/mod'
+import Game from './assets/pages/game'
 
 
 createRoot(document.getElementById('root')).render(
@@ -32,7 +32,8 @@ createRoot(document.getElementById('root')).render(
   <Route path="/mods" element={<Mods/>}/>
   <Route path="/report" element={<Report/>}/>
 
-  <Route path="/mod" element={<Mod/>}/>
+ 
+  <Route path="/game" element={<Game/>}/>
 
 
   </Routes>
