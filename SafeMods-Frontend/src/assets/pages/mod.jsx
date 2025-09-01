@@ -94,8 +94,17 @@ function Mod ()
                 <div className="col-lg-12">
                   <div className="content">
                     <div className="row">
-                      <div className="col-lg-3">
-                        
+                      <div className="col-lg-6">
+                         <div class="left-info">
+                        <div class="left">
+                          <h3 style={{color:"white"}}>GTA 5</h3>
+                         
+                        </div>
+                        <ul>
+                          <li><i class="fa fa-star"></i> 4.8</li>
+                          <li><i class="fa fa-download"></i> 2.3M</li>
+                        </ul>
+                      </div>
                       
                       </div>
                       <div className="col-lg-6">
@@ -117,10 +126,7 @@ function Mod ()
                           </ul>
                         </div>
                       </div>
-                      <div className="col-lg-3">
-                        
                       
-                      </div>
 
                       <div className="col-lg-4">
                         <img
@@ -159,7 +165,7 @@ function Mod ()
 
                      <center> <div className="col-lg-6">
                         <div className="main-border-button">
-                          <a href="#">Explore Mods</a>
+                          <a href="#">Rate</a>
                         </div>
                       </div>
                       </center>
@@ -176,7 +182,7 @@ function Mod ()
                 <div className="col-lg-12">
                   <div className="heading-section">
                     <h4>
-                       Most Downloaded Mods
+                       Other Mods
                     </h4>
                   </div>
                 </div>
